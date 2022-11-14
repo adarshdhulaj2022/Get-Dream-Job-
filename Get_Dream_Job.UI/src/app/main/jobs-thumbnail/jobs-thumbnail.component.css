@@ -1,0 +1,14 @@
+:host {
+    display: block;
+    width: 100%;
+}
+.title {
+    height: 60px;
+    overflow: hidden;
+    color: var(--brown-500);
+    margin: 0.5rem 1rem 1rem;
+}
+
+img {
+    width: 100%;
+}

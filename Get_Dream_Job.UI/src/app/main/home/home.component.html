@@ -1,0 +1,14 @@
+<section [ngClass]="jobs.type" *ngFor="let jobs of jobsToDisplay">
+    <h2>{{jobs.type.split("-").join(" ") | titlecase}}</h2>
+    <div class="jobs">
+        <div class="main-jobs">
+            <app-jobs-thumbnail [job]="jobs.jobs[0]"></app-jobs-thumbnail>
+        </div>
+        <div class="other-jobs">
+            <app-jobs-thumbnail *ngFor="let job of jobs.jobs.slice(1)" view="other" [job]="job"> 
+                </app-jobs-thumbnail>
+        </div>
+    </div>
+
+</section>
+

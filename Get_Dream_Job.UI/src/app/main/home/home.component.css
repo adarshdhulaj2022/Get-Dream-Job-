@@ -1,0 +1,71 @@
+:host {
+    display: block;
+}
+
+section {
+    margin-top: 3rem;
+    position: relative;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    border: 1px solid var(--brown-100);
+}
+
+section:not(:first-of-type) {
+    margin-top: 5rem;
+}
+
+section>h2 {
+    position: relative;
+    width: max-content;
+    top: -18px;
+    left: 20px;
+    color: var(--brown-500);
+    border-radius: 10px;
+    border: 1px solid var(--brown-100);
+    padding: 0.2rem 1rem;
+    background-color: white;
+
+}
+
+section>.jobs {
+    display: grid;
+    padding: 0.5rem 1rem;
+}
+
+.jobs>.main-jobs,
+.jobs>.other-jobs>* {
+    display: block;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.other-jobs {
+    gap: 2rem;
+    display: grid;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .main .title {
+        overflow: auto;
+        height: max-content;
+
+    }
+
+    .other .table-title {
+        margin: 0.2rem 0;
+        font-size: 1.2rem;
+        letter-spacing: 0.2px;
+    }
+    .jobs {
+        gap: 2rem;
+        grid-template-columns: 1fr 1.2fr;
+    }
+
+    .other-jobs {
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0%;
+    }
+    
+}

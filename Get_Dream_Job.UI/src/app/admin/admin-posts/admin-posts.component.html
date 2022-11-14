@@ -1,0 +1,107 @@
+<div class="container">
+    <form [formGroup]="postForm" (ngSubmit)="postSubmited()" class="border p-3 rounded-3">
+        <div class="row g-0 mb-3">
+            <div class="col text-center p2 mb-3 bg-light">
+                <span class="fs-3">Job Post</span>
+            </div>
+        </div>
+    
+        <div class="row mb-3">
+            <div class="col">
+                <label for="heading" class="form-label mb-2">Post Heading </label>
+                <input type="text" class="form-control" id="heading" formControlName="heading">
+            </div>
+            <div class="col">
+                <label for="title" class="form-label mb-2">Post Title </label>
+                <input type="text" class="form-control" id="title" formControlName="title">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="imageUrl" class="form-label mb-3">Select Post Image</label>
+                <input class="form-control" type="file" id="imageUrl" formControlName="imageUrl" >
+            </div>
+            <div class="col">
+                <label for="publishedDate" class="form-label mb-2">Published Date </label>
+                <input type="text" class="form-control" id="publishedDate" formControlName="publishedDate">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="jobDiscription" class="form-label">Job Discription</label>
+                <textarea class="form-control" id="jobDiscription" rows="5" formControlName="jobDiscription"></textarea>
+            </div>
+            <div class="col">
+                <label for="eligibility" class="form-label">Eligibility Critreria</label>
+                <textarea class="form-control" id="eligibility" rows="5" formControlName="eligibility"></textarea>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="organizationName" class="form-label mb-2">Organization Name</label>
+                <input type="text" class="form-control" id="organizationName" formControlName="organizationName">
+            </div>
+            <div class="col">
+                <label for="postName" class="form-label mb-2">Post Name </label>
+                <input type="text" class="form-control" id="postName" formControlName="postName">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="degree" class="form-label mb-2">Degree </label>
+                <input type="text" class="form-control" id="degree" formControlName="degree">
+            </div>
+            <div class="col">
+                <label for="batch" class="form-label mb-2"> Batch </label>
+                <input type="text" class="form-control" id="batch" formControlName="batch">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="salary" class="form-label mb-2">Salary</label>
+                <input type="text" class="form-control" id="salary" formControlName="salary">
+            </div>
+            <div class="col">
+                <label for="experience" class="form-label mb-2">Experience</label>
+                <input type="text" class="form-control" id="experience" formControlName="experience">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="location" class="form-label mb-2">Location </label>
+                <input type="text" class="form-control" id="location" formControlName="location">
+            </div>
+            <div class="col">
+                <label for="lastDate" class="form-label mb-2">LastDate To Apply</label>
+                <input type="text" class="form-control" id="lastDate" formControlName="lastDate">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label for="tags" class="form-label mb-2">Tags</label>
+                <input type="text" class="form-control" id="tags" formControlName="tags">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 offset-1">
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            <div class="col-4 offset-1">
+                <div class="d-grid">
+                    <button type="reset" class="btn btn-primary">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+
